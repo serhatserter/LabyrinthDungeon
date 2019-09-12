@@ -208,6 +208,8 @@ public class Enemy2AI : MonoBehaviour {
 	void Update () {
 
 		isLook = true;
+
+
 		
 	}
 

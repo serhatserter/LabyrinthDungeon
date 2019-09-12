@@ -8,15 +8,11 @@ using DG.Tweening;
 public class DestructibleWall : MonoBehaviour {
 
 
-	private void Start()
-	{
-
-	}
-
 	void OnCollisionEnter(Collision col)
 	{
 		if(col.gameObject.tag == "Bull" && col.gameObject.GetComponent<Enemy2AI>().collapseWall)
 		{
+
 		
 			foreach (Transform child in transform.parent)
 			{

@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{EE397643-987F-D1FB-ED86-B00A7C32DD43}</ProjectGuid>
+    <ProjectGuid>{1B9979FA-5A9E-6B28-DEE7-86BA453C1E0C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -86,16 +86,17 @@
     <Compile Include="Assets\Scripts\NavMeshComponents\Scripts\NavMeshModifier.cs" />
     <Compile Include="Assets\Scripts\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
     <Compile Include="Assets\Scripts\NavMeshComponents\Scripts\NavMeshSurface.cs" />
+    <Compile Include="Assets\Scripts\Player\FadeWay.cs" />
     <Compile Include="Assets\Scripts\Player\LineCreate.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\AddingAssets\TAZO_3D_C\BOSS\Bull\Shader\Cartoon.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/Belgeler/Unity Projects/InternProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/Masaüstü/LabyrinthDungeon/LabyrinthDungeon/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Belgeler/Unity Projects/InternProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Masaüstü/LabyrinthDungeon/LabyrinthDungeon/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.9f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -296,7 +297,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.9f2/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>D:/Belgeler/Unity Projects/InternProject/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+      <HintPath>D:/Masaüstü/LabyrinthDungeon/LabyrinthDungeon/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/serha/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
