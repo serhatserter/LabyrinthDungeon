@@ -11,6 +11,7 @@ public class Enemy1AI : MonoBehaviour
 	public Animator anim;
 	public NavMeshAgent agent;
 	public GameObject player;
+	public GameObject heart;
 
 	RaycastHit hitInfo;
 	Vector3 minRay;
@@ -148,8 +149,10 @@ public class Enemy1AI : MonoBehaviour
 		isAtack = true;
 		player.GetComponent<PlayerAttack>().damage = true;
 
+
 		yield return new WaitForSeconds(0.5f);
 
+		heart.GetComponent<HeartManage>().damaged = true;
 		isAtack = false;
 		player.GetComponent<PlayerAttack>().damage = false;
 		anim.SetBool("Enemy1Attack", false);

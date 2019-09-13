@@ -13,7 +13,9 @@ public class DestructibleWall : MonoBehaviour {
 		if(col.gameObject.tag == "Bull" && col.gameObject.GetComponent<Enemy2AI>().collapseWall)
 		{
 
-		
+			col.gameObject.GetComponentInChildren<BoxCollider>().isTrigger = true;
+			
+
 			foreach (Transform child in transform.parent)
 			{
 				child.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
@@ -36,6 +38,7 @@ public class DestructibleWall : MonoBehaviour {
 				col.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 
 				StartCoroutine(WaitWall());
+
 			}
 				
 			
