@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 using DG.Tweening;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HeartManage : MonoBehaviour {
 
 
 	public GameObject player;
+	public Image dark;
 
 	public bool damaged;
 
@@ -34,6 +38,8 @@ public class HeartManage : MonoBehaviour {
 				player.GetComponent<PlayerController>().enabled = false;
 				player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 				player.GetComponent<Animator>().SetBool("DeathKey", true);
+
+				StartCoroutine(Wait());
 			}
 
 			damaged = false;
@@ -60,5 +66,16 @@ public class HeartManage : MonoBehaviour {
 	{
 		heartCount--;
 		Destroy(transform.GetChild(0).gameObject); 
+	}
+
+	IEnumerator Wait()
+	{
+		yield return new WaitForSeconds(2);
+		dark.DOColor(Color.black, 2f).OnComplete(ReturnMenu);
+	}
+
+	void ReturnMenu()
+	{
+		SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
 	}
 }

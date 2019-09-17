@@ -9,8 +9,8 @@ public class CameraMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//camCoord = transform.position;
-		camCoord.y = 15;
-		camCoord.z = -15;
+		camCoord.y = 20;
+		camCoord.z = -20;
 
 	}
 	

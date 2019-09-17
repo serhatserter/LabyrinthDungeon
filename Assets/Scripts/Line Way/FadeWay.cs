@@ -13,7 +13,7 @@ public class FadeWay : MonoBehaviour {
 		transparentColor = normalColor;
 		transparentColor.a = 0f;
 
-		transform.GetComponent<Renderer>().material.DOColor(transparentColor, 30f).OnComplete(DeleteWay);
+		transform.GetComponent<Renderer>().material.DOColor(transparentColor, 120f).OnComplete(DeleteWay);
 	}
 	
 	void DeleteWay()

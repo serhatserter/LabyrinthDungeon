@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.AI;
 
 using DG.Tweening;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Enemy2AI : MonoBehaviour {
 
@@ -12,6 +14,7 @@ public class Enemy2AI : MonoBehaviour {
 
 	public NavMeshAgent agent;
 	public GameObject player;
+	public Image dark;
 
 	public GameObject[] destObj;
 	public Vector3 playerRunPos;
@@ -200,11 +203,21 @@ public class Enemy2AI : MonoBehaviour {
 			agent.SetDestination(transform.position);
 			//anim.SetBool("isBullAttack", false);
 			player.GetComponent<Animator>().SetBool("DeathKey", true);
+
+			StartCoroutine(Wait());
 		}
 	}
 
+	IEnumerator Wait()
+	{
+		yield return new WaitForSeconds(2);
+		dark.DOColor(Color.black, 2f).OnComplete(ReturnMenu);
+	}
 
-
+	void ReturnMenu()
+	{
+		SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+	}
 	void Update () {
 
 		isLook = true;
