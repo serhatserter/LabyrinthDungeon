@@ -38,7 +38,7 @@ public class Enemy1AI : MonoBehaviour
 		viewRange = 0.2f;
 		totalView = minRay.x;
 
-		followDistance = 10f;
+		followDistance = 20f;
 		hearDistance = 4f;
 		nearDistance = 3.5f;
 

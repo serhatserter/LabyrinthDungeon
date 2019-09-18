@@ -56,7 +56,7 @@ public class Swich : MonoBehaviour
 		foreach (GameObject obj in objects)
 		{
 
-			if (Vector3.Distance(transform.position, obj.transform.position) <= 1f)
+			if (Vector3.Distance(transform.position, obj.transform.position) <= 2f)
 			{
 				GetComponent<Renderer>().material = switchOn;
 				door.transform.DOMoveY(5, 0.5f);

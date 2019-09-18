@@ -1942,7 +1942,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: d3fdd53a2b5dd904fad8d824266a4cad, type: 2}
     - target: {fileID: 1000013931470818, guid: 5c02591794acece409986647ed6329a7, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c02591794acece409986647ed6329a7, type: 2}
@@ -7544,6 +7544,7 @@ MonoBehaviour:
   isRun: 0
   agent: {fileID: 1130084012}
   player: {fileID: 2037701360}
+  dark: {fileID: 0}
   destObj:
   - {fileID: 934591100}
   - {fileID: 1518914058}
@@ -15259,6 +15260,7 @@ MonoBehaviour:
   isRun: 0
   agent: {fileID: 1676605522}
   player: {fileID: 2037701360}
+  dark: {fileID: 0}
   destObj:
   - {fileID: 2130751730}
   - {fileID: 2097166051}

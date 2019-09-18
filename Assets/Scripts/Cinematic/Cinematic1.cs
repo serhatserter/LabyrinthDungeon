@@ -15,7 +15,7 @@ public class Cinematic1 : MonoBehaviour {
 	void Start () {
 		player.GetComponent<Animator>().SetBool("Cinematic", true);
 		transparent = new Color(0, 0, 0, 0);
-		transform.DOMoveZ(239.25f, 20f).SetEase(Ease.InOutSine).OnComplete(StopAnim);
+		transform.DOMoveZ(player.transform.position.z-1.5f, 20f).SetEase(Ease.InOutSine).OnComplete(StopAnim);
 		dark.DOColor(transparent, 10f);
 	}
 	
